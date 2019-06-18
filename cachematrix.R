@@ -40,3 +40,9 @@ cacheSolve <- function(x, ...) {
   x$setinverse(i)
   i
 }
+
+A <- matrix( c(5, 1, 0,
+                   3,-1, 2,
+                   4, 0,-1), nrow=3, byrow=TRUE)
+A1 <- makeCacheMatrix(A)
+cacheSolve(A1) 
